@@ -11,4 +11,8 @@ These were used to calculate AFM tip geometry parameters as explained in the man
 The load index, m, of the power law was calculated at different contact depths, hc, based on a polynomial fit of PDMS loading curves. The plane strain elastic modulus, E^*, of the PDMS specimen required to derive the tip geometry was independently calculated from micromanipulation experiments based on the indentation of 3 different regions. 
 The derived parameters c and n define the local geometry of the AFM tip at different selected contact depths.
 
+2. "Modulus on Tape"
+This algorithm uses the Oliver-Pharr method to analyse the retract curves and calculate the stiffness of the sample as the slope of the tangent at maxium applied force.
+This script only serves to calculate Young's modulus of cells on tape and is based on the Oliver-Pharr method.
+
 2. "Oliver-Pharr method"
