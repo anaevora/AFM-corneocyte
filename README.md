@@ -15,4 +15,7 @@ The derived parameters c and n define the local geometry of the AFM tip at diffe
 This algorithm uses the Oliver-Pharr method to analyse the retract curves and calculate the stiffness of the sample as the slope of the tangent at maxium applied force.
 This script only serves to calculate Young's modulus of cells on tape and is based on the Oliver-Pharr method.
 
-2. "Oliver-Pharr method"
+3. "Viscoelastic properties"
+This algorithm uses the Oliver-Pharr method to analyse the retract curves and calculate the stiffness of the sample as the slope of the tangent at maximum applied force. Viscoelastic properties are also measured using force-relaxation curves.
+
+4. "Create_vpmodel" and "Viscoplastic model_total"
