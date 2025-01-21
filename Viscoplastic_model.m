@@ -1,6 +1,11 @@
 % This algorithm uses the Oliver-Pharr method to analyse the retract curves
 % and calculate the stiffness of the sample as the slope of the tangent at
-% maxium applied force.
+% maxium applied force. Viscoelastic properties are also measured using force-relaxation curves.
+
+%Herschel-Bulkley material model is applied to describe viscoplastic material properties of corneocytes. 
+% Best fit parameters are calculated: σY (MPa), j, k (MPa s j )	and R2 (mean ± 1 SD) as shown in Table 4 of manuscript.
+
+
 % It takes the .txt files saved from JPK software as input and 
 % give as output the Young's modulus for each file (saved as .xslx file).
 % Contact point determination with JPK software and in the
