@@ -4,6 +4,14 @@
 % files are after contact point determination with JPK software and in the
 % form: "Vertical Deflection" "Segment Time" "Tip-Sample Separation"
 
+%Note power law F=bh^m where 'b' and 'm' are the coefficients found with this script and used to characterise probe geometry.
+%These were used to calculate AFM tip geometry parameters as explained in the manuscript (please see main text and SI for detailed derivation aof equations).
+%The load index, m, of the power law was calculated 
+%at different contact depths, hc, based on a polynomial fit of PDMS loading curves. 
+%The plane strain elastic modulus, E^*, of the PDMS specimen required to derive the tip geometry was independently calculated 
+%from micromanipulation experiments based on the indentation of 3 different regions. 
+&The derived parameters c and n define the local geometry of the AFM tip at different selected contact depths. 
+
 % here information about the data/experiment need to be entered
 input_folder = 'C:\Users\anasf\Desktop\Work\AFM\txt'; % where are the data files with CP fitted
 % where are the files going to be saved?
@@ -96,7 +104,7 @@ for i = 1:size(D_cell_filename,1)
     % Let's make up a bunch of x (50) from the min to the max.
     xFitted = linspace(min(X), max(X), 50);
     % Create smoothed/regressed data using the model:
-    yFitted = coefficients(1)* xFitted.^ coefficients(2);
+    yFitted = coefficients(1)* xFitted.^ coefficients(2); %F=bh^m (power law to define curve behaviour)
 
     % Now we're done and we can plot the smooth model as a red line going through the noisy blue markers.
     hold on;
@@ -119,13 +127,13 @@ for i = 1:size(D_cell_filename,1)
     % Give a name to the title bar.
     set(gcf, 'Name', 'Demo by ImageAnalyst', 'NumberTitle', 'Off')
     
-    k = coefficients(1);
+    b = coefficients(1);
     m = coefficients(2);
    
 
 %Save in output arrays 
-    young(i,1) = k; %Young's modulus in MPa
-    young(i,2) = m; %stiffness of cell (N/m)
+    young(i,1) = b; 
+    young(i,2) = m;
     
 end
 
