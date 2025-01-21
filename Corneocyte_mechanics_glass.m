@@ -135,7 +135,10 @@ for i = 1:size(D_cell_filename,1)
     hmax_unload= max(height_ind);
 
     %Parameters of cantilevers obtained based on PDMS nanoindentation experiments
-	%Cantilever 6 parameters:
+
+	%Cantilever x parameters
+ 	%Note: should be updated for the cantilever used! Parameters are calculated using an excel file 
+  	%(can be found as SI info: "Tip geometry parameters")
 
     k30 = 4.130775;
     n30 = 9.459987;
