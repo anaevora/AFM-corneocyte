@@ -10,7 +10,7 @@
 %at different contact depths, hc, based on a polynomial fit of PDMS loading curves. 
 %The plane strain elastic modulus, E^*, of the PDMS specimen required to derive the tip geometry was independently calculated 
 %from micromanipulation experiments based on the indentation of 3 different regions. 
-&The derived parameters c and n define the local geometry of the AFM tip at different selected contact depths. 
+%The derived parameters c and n define the local geometry of the AFM tip at different selected contact depths. 
 
 % here information about the data/experiment need to be entered
 input_folder = 'C:\Users\anasf\Desktop\Work\AFM\txt'; % where are the data files with CP fitted
