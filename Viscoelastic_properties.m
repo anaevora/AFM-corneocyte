@@ -1,6 +1,7 @@
 % This algorithm uses the Oliver-Pharr method to analyse the retract curves
 % and calculate the stiffness of the sample as the slope of the tangent at
-% maximum applied force.
+% maximum applied force. Viscoelastic properties are also measured using force-relaxation curves.
+
 % It takes the .txt files saved from JPK software as input and 
 % give as output the Young's modulus for each file (saved as .xslx file).
 % Contact point (CP) determination with JPK software and in the
