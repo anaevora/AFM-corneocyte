@@ -16,6 +16,7 @@ This algorithm uses the Oliver-Pharr method to analyse the retract curves and ca
 This script only serves to calculate Young's modulus of cells on tape and is based on the Oliver-Pharr method.
 
 3. "Viscoelastic properties"
-This algorithm uses the Oliver-Pharr method to analyse the retract curves and calculate the stiffness of the sample as the slope of the tangent at maximum applied force. Viscoelastic properties are also measured using force-relaxation curves.
+This algorithm uses the Oliver-Pharr method to analyse the retract curves and calculate the stiffness of the sample as the slope of the tangent at maximum applied force. Viscoelastic properties are also measured using force-relaxation curves. Parameters mesured with this script are Young's modulus (MPa), Relaxation times	(τ1 and τ2) Hardness (H0 (MPa)	H∞ (MPa)).
+
 
 4. "Create_vpmodel" and "Viscoplastic model_total"
