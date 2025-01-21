@@ -19,4 +19,8 @@ This script only serves to calculate Young's modulus of cells on tape and is bas
 This algorithm uses the Oliver-Pharr method to analyse the retract curves and calculate the stiffness of the sample as the slope of the tangent at maximum applied force. Viscoelastic properties are also measured using force-relaxation curves. Parameters mesured with this script are Young's modulus (MPa), Relaxation times	(τ1 and τ2) Hardness (H0 (MPa)	H∞ (MPa)).
 
 
-4. "Create_vpmodel" and "Viscoplastic model_total"
+4. "Create_vpmodel" and "Viscoplastic model"
+This algorithm uses the Oliver-Pharr method to analyse the retract curves and calculate the stiffness of the sample as the slope of the tangent at maxium applied force. Viscoelastic properties are also measured using force-relaxation curves.
+Herschel-Bulkley material model is applied to describe viscoplastic material properties of corneocytes. 
+Best fit parameters are calculated: σY (MPa), j, k (MPa s j )	and R2 (mean ± 1 SD) as shown in Table 4 of manuscript.
+
